@@ -296,6 +296,35 @@ body {
   margin-left: 30px;
 }
 
+.advantages-list .item::before{
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.advantages-details::before{
+  background-image: url(../images/antenna.svg);
+}
+
+.advantages-punctuality::before{
+  background-image: url(../images/clock.svg);
+}
+
+.advantages-planing::before{
+  background-image: url(../images/diagram.svg);
+}
+
+.advantages-technology::before{
+  background-image: url(../images/astronaut.svg);
+}
+
 .advantages-text {
   margin: 0;
 }
