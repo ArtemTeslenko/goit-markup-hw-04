@@ -48,6 +48,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -157,9 +170,10 @@ body {
 }
 
 .address-nav .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--main-text-color);
   font-weight: 500;
@@ -170,6 +184,19 @@ body {
 .address-nav .link:hover,
 .address-nav .link:focus {
   color: var(--accent-color);
+}
+
+.link-ic-envelope,
+.link-ic-smartphone{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-ic-smartphone{
+  width: 10px;
+  height: 16px;
 }
 
 .hero .container{
@@ -296,7 +323,9 @@ body {
   margin-left: 30px;
 }
 
-.advantages-list .item::before{
+/* ----- icons with a help of BEFORE/AFTER just trying ----- */
+
+/* .advantages-list .item::before{
   display: block;
   content: "";
   height: 120px;
@@ -323,7 +352,7 @@ body {
 
 .advantages-technology::before{
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 .advantages-text {
   margin: 0;
@@ -513,10 +542,4 @@ body {
   border-right: 1px solid var(--examples-berder-color);
 }
 
-.link-envelope{
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  text-align: start;
-  fill: currentColor;
-}
+

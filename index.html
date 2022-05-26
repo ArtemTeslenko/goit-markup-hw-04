@@ -32,12 +32,20 @@
         <ul class="list address-nav">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
-              <svg class="link-envelope">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
+              <svg class="link-ic-envelope">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg class="link-ic-smartphone">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -49,9 +57,9 @@
     </section>
     <!--Our advantages-->
     <section class="advantages">
-      <!--the header will be hidden-->
+      <!--the header should be hidden-->
       <div class="container">
-        <h2 class="heading">Наши преимущества</h2>
+        <h2 class="visually-hidden heading" aria-hidden="true" tabindex="-1">Наши преимущества</h2>
         <ul class="list advantages-list">
           <li class="item advantages-details">
             <h3 class="heading">Внимание к деталям</h3>
