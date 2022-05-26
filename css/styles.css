@@ -512,3 +512,11 @@ body {
   border-left: 1px solid var(--examples-berder-color);
   border-right: 1px solid var(--examples-berder-color);
 }
+
+.link-envelope{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  text-align: start;
+  fill: currentColor;
+}
