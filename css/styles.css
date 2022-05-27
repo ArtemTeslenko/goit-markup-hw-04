@@ -188,15 +188,8 @@ body {
 
 .link-ic-envelope,
 .link-ic-smartphone{
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.link-ic-smartphone{
-  width: 10px;
-  height: 16px;
 }
 
 .hero .container{
@@ -321,6 +314,17 @@ body {
 .advantages-list .item {
   flex-basis: calc((100% - 90px)/4);
   margin-left: 30px;
+}
+
+.icon-advantages-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 /* ----- icons with a help of BEFORE/AFTER just trying ----- */
