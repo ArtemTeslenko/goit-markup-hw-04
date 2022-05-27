@@ -230,6 +230,7 @@ body {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 /*normal because of address*/
@@ -246,12 +247,46 @@ body {
 .footer-nav .link:focus {
   color: var(--accent-color);
 }
-.footer-container > .logo {
+.footer-contacts > .logo {
   margin-bottom: 20px;
 }
 .contacts {
   display: block;
 }
+
+.footer-social .link-social{
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+  border-radius: 50%;
+}
+
+.footer-social .link-social:not(:last-child){
+  margin-right: 10px;
+}
+
+.footer-social .link-social:hover,
+.footer-social .link-social:focus{
+  background-color: var(--accent-color);
+}
+
+.join{
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social{
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
 /*hero*/
 
 .main-heading {
@@ -288,6 +323,7 @@ body {
 .hero-button:focus {
   background: var(--button-accent-color);
 }
+
 
 /*advantages*/
 
@@ -409,7 +445,10 @@ body {
 
 .position {
   padding: 0;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -440,6 +479,37 @@ body {
 
   background-color: var(--our-team-bgc);
 }
+
+.social-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.member-item .link-social{
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+  border-radius: 50%;
+}
+
+.member-item .link-social:not(:last-child){
+  margin-right: 10px;
+}
+
+.member-item .link-social:hover,
+.member-item .link-social:focus{
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
+/* OUR CLIENTS */
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 
 /*portfolio filter*/
 
